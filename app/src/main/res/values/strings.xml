@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Amharic_Love_Quotes</string>
+    <string name="action_settings">ስለ እኛ</string>
+    <string name="music" />
+    <string name="imageDescription">LoveImages</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="donate_now">1 ብር ይለግሱ!</string>
+    <string name="videos">ምርጥ ቪዲዮዎች</string>
+    <string name="loveImages">Love Images List</string>
+    <string name="donation_explanation">ኢትዮጲያ ዉስጥ የሚኖሩ ከሆነና ይህን አፕ ከወደዱት ለአንድ ጊዜ ብቻ የሚሰጥ የ 1 ብር የአየር ሰአት ስጦታ ማበርከት ይችላሉ፡፡ ስጦታዉን ‹1 ብር ይለግሱ› የሚለዉን በመንካት መላክ ይችላሉ፡፡
+        \n\nከኢትዮጲያ ዉጪ የምትኖሩ ከሆነ ደግሞ በ Paypal አድራሻችን hailefix2@gmail.com የፈለጉትን መጠን ይለግሱ!
+        \n\nበተጨማሪም በዚህ አፕ ዉስጥ አገልግሎትዎን ማስተዋወቅ ከፈለጉ በሚከተለዉ የኢሜይል አድራሻችን ያገኙናል
+        \n\nhailemix2@gmail.com\nእናመሰግናለን!</string>
+
+</resources>
