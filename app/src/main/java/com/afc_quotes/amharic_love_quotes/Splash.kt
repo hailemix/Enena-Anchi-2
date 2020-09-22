@@ -1,7 +1,9 @@
 package com.afc_quotes.amharic_love_quotes
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import android.view.animation.Animation
@@ -19,7 +21,16 @@ class Splash : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
 
-        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        @Suppress("DEPRECATION")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+            window.insetsController!!.hide(WindowInsets.Type.statusBars())
+        } else {
+            window.setFlags(
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                    WindowManager.LayoutParams.FLAG_FULLSCREEN
+            )
+        }
+
         val iv = findViewById<ImageView>(R.id.splashImage)
         Glide.with(this).load(R.drawable.splash).into(iv)
         val an = AnimationUtils.loadAnimation(baseContext, R.anim.splashanimation)
