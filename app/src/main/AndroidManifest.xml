@@ -48,12 +48,7 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name="com.afc_quotes.amharic_love_quotes.Donate"
-            android:configChanges="orientation"
-            tools:ignore="LockedOrientationActivity"
-            android:screenOrientation="portrait">
-        </activity>
+
 
         <service android:name=".MyFirebaseMessagingService"
             android:exported="false">

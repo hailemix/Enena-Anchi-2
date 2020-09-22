@@ -36,9 +36,6 @@ class MainActivity : AppCompatActivity() {
         val statusBarSetting: Window = this.window
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-
-            statusBarSetting.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
-            statusBarSetting.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             statusBarSetting.statusBarColor = ContextCompat.getColor(this, R.color.deep_dark)
         }
 
@@ -60,11 +57,6 @@ class MainActivity : AppCompatActivity() {
         val url = "https://ethiocoderzone.wordpress.com/2018/10/11/%E1%88%9D%E1%88%AD%E1%8C%A5-%E1%8B%A8%E1%8A%A0%E1%88%88%E1%88%9D-%E1%8C%A5%E1%89%85%E1%88%B6%E1%89%BD-world-quotes-for-ethiopians/"
 
         when (item.itemId) {
-            R.id.donate_us -> {
-                val intent = Intent(this@MainActivity, Donate::class.java)
-                startActivity(intent)
-                return true
-            }
 
             R.id.action_privacy -> {
                 try {
@@ -78,7 +70,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.my_youtube_video -> {
 
-                val videoUrl = "https://youtu.be/VXYTs7rkqec"
+                val videoUrl = "https://youtu.be/63klY8F3Xp8"
                 try {
                     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(videoUrl))
                     startActivity(intent)
